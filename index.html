@@ -5,20 +5,26 @@
     <title>Squad GE Vietnam Spots</title>
 
     <style>
+        button {
+            outline: 0px solid black;
+        }
     </style>
 </head>
-<body>
+<body style="position: relative">
 
-    <button onclick="showPopup('7519599838007151928')" style="transform:rotate(-32deg)">Show Image</button>
+    <button onclick="showPopup('7519599838007151928')" style="transform:rotate(-32deg); position:relative">Show Image</button>
 
-    <div id="Maps">
-        <div id="albasrah">
-            <img src="https://raw.githubusercontent.com/sh4rkman/SquadCalc/refs/heads/master/public/maps/albasrah/basemap.webp" alt="albasrah" />
+    <div id="maps">
+        <div id="albasrah" style="position: relative;">
+            <img src="https://raw.githubusercontent.com/Sarty1234/Sarty1234.github.io/refs/heads/main/maps/albasrah/basemap.webp" style="position:relative;" alt="albasrah" />
+            <div id="albasrahspots">
+                <a href="https://www.tiktok.com/@duty_petro/video/7481004411293093175" target="_blank" style="transform: rotate(0deg); width: 25px; height: 15px; background-color: green; position: absolute; left: 2469px; top: 2992px;"></a>
+            </div>
         </div>
     </div>
 
     <!-- Pop Up with tiktok video -->
-    <div id="popup" style="display:none">
+    <div id="popup" style="display:none; position:absolute; left: 100px; top: 100px;">
         <div id="popupContent">
             <span class="closeBtn" onclick="hidePopup()">×</span>
 
